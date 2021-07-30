@@ -1,0 +1,14 @@
+.card-container {
+  background-color: #fefefe;
+  border-radius: 10px;
+  width: 336px;
+  height: 450px;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+}
+
+@media (max-width: 374px) {
+  .card-container {
+    width: 95%;
+  }
+}

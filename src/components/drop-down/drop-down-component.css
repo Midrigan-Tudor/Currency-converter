@@ -1,0 +1,27 @@
+.drop-down-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-down-list {
+  max-width: 100%;
+  padding: 10px;
+  margin: 5px 18px;
+  border: 1px solid rgb(0, 0, 205, 0.2);
+  border-radius: 5px;
+  outline: none;
+}
+
+.drop-down-list:focus {
+  border: 1px solid rgb(0, 0, 205, 1);
+}
+
+.drop-down-list:hover {
+  cursor: pointer;
+}
+
+.drop-down-label {
+  align-self: center;
+  margin-top: 10px;
+  color: black;
+}

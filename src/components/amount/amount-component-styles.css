@@ -1,0 +1,23 @@
+.amount-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-input {
+  padding: 10px;
+  margin: 5px 18px 5px 18px;
+  border: 1px solid rgb(0, 0, 205, 0.2);
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+.amount-input:focus {
+  border: 1px solid rgb(0, 0, 205);
+}
+
+.amount-label {
+  align-self: center;
+  margin-top: 10px;
+  color: black;
+}
