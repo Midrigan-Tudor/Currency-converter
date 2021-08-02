@@ -21,13 +21,17 @@ const Card = () => {
 
     const AmountToConvert = e => {
         setMoneyAmount(e.target.value)
-        if(!isNaN(e.target.value)) 
-        setWarning(false)
+        if(!isNaN(e.target.value)) {
+            setWarning(false)
+        } else {
+            setWarning(true)
+        }
+        
     }
 
     const ValidationFunction = e => {
         if(e.key!=='Enter')
-        !isNaN(e.key) && !moneyAmount.includes('/') && !moneyAmount.includes('*') ? setWarning(false) : setWarning(true)
+        !isNaN(e.key) && !moneyAmount.includes('/') && !moneyAmount.includes('*')  ? setWarning(false) : setWarning(true)
     }
 
     const swapHandler = () => {
