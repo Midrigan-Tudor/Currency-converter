@@ -21,7 +21,7 @@ const Card = () => {
 
     const AmountToConvert = e => {
         setMoneyAmount(e.target.value)
-        if(!isNaN(e.target.value) && Number(moneyAmount)) 
+        if(!isNaN(e.target.value)) 
         setWarning(false)
     }
 
