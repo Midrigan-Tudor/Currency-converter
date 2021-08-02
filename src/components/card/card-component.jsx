@@ -27,7 +27,7 @@ const Card = () => {
 
     const ValidationFunction = e => {
         if(e.key!=='Enter')
-        !isNaN(e.key) && !['/','*'].includes(moneyAmount[0]) ? setWarning(false) : setWarning(true)
+        !isNaN(e.key) && !moneyAmount.includes('/') && !moneyAmount.includes('*') && Number(moneyAmount) ? setWarning(false) : setWarning(true)
     }
 
     const swapHandler = () => {
