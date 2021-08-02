@@ -26,12 +26,6 @@ const Card = () => {
         } else {
             setWarning(true)
         }
-        
-    }
-
-    const ValidationFunction = e => {
-        if(e.key!=='Enter')
-        !isNaN(moneyAmount)  ? setWarning(false) : setWarning(true)
     }
 
     const swapHandler = () => {
@@ -49,7 +43,7 @@ const Card = () => {
 
     return (
         <div className='card-container'>
-            <Amount moneyAmount={moneyAmount} AmountToConvert={AmountToConvert} ValidationFunction={ValidationFunction} warning={warning} label='Amount'/>
+            <Amount moneyAmount={moneyAmount} AmountToConvert={AmountToConvert} warning={warning} label='Amount'/>
             <Button type='Swap' buttonHandler={swapHandler}/>
             <DropDown currenciesList={currenciesList} selectedCurrency={fromCurrency} label='From' currencyHandler={e => setFromCurrency(e.target.value)}/>
             <DropDown currenciesList={currenciesList} selectedCurrency={toCurrency} label='To' currencyHandler={e => setToCurrency(e.target.value)}/>
