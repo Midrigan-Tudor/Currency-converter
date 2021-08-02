@@ -21,7 +21,7 @@ const ConversionResult = ({ moneyAmount,warning,fromCurrency,toCurrency,currenci
     }
     return (
         <div className='conversion-result-container'>
-           { warning || moneyAmount==='' ? null:<p> {`${moneyAmount} ${fromCurrency} = ${parseFloat((moneyAmount*rate).toFixed(2))} ${toCurrency}`} </p> } 
+           { warning || moneyAmount==='' ? null:<p> {`${Number(moneyAmount)} ${fromCurrency} = ${parseFloat((moneyAmount*rate).toFixed(2))} ${toCurrency}`} </p> } 
         </div>)
 }
 
